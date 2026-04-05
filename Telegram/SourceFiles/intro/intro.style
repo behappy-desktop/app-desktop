@@ -170,7 +170,7 @@ introBackButton: IconButton(defaultIconButton) {
 
 introQrTop: -18px;
 introQrPixel: 50px; // large enough
-introQrMaxSize: 180px;
+introQrMaxSize: 280px;
 introQrBackgroundSkip: 12px;
 introQrBackgroundRadius: 8px;
 introQrLabelsWidth: 292px;
@@ -183,13 +183,13 @@ introQrTitle: FlatLabel(defaultFlatLabel) {
 		font: font(20px semibold);
 	}
 }
-introQrErrorTop: 336px;
-introQrTitleTop: 196px;
+introQrErrorTop: 436px;
+introQrTitleTop: 296px;
 introQrStep: FlatLabel(defaultFlatLabel) {
 	minWidth: 200px;
 }
-introQrStepsTop: 232px;
+introQrStepsTop: 332px;
 introQrStepMargins: margins(20px, 8px, 0px, 0px);
-introQrSkipTop: 360px;
+introQrSkipTop: 460px;
 introQrCenterSize: 44px;
 introQrPlane: icon {{ "intro_qr_plane", activeButtonFg }};
