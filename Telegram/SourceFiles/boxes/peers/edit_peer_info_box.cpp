@@ -102,9 +102,12 @@ constexpr auto kBotManagerUsername = "BotFather"_cs;
 }
 
 [[nodiscard]] int EnableForumMinMembers(not_null<PeerData*> peer) {
+	// BeHappy: the original 200-member gate is a Telegram business rule
+	// that has no place in our self-hosted deployment. Default to 0 so
+	// the "Topics" switch is always available for supergroup admins.
 	return peer->session().appConfig().get<int>(
 		u"forum_upgrade_participants_min"_q,
-		200);
+		0);
 }
 
 void AddSkip(
