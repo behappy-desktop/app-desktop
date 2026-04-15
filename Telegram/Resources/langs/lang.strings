@@ -4206,6 +4206,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_gift_resale_price" = "Price";
 "lng_gift_resale_number" = "Number";
 "lng_gift_resale_date" = "Date";
+"lng_gift_resale_switch_to_stars" = "Switch to Stars";
+"lng_gift_resale_switch_to_ton" = "Switch to TON";
 "lng_gift_resale_count#one" = "{count} gift in resale";
 "lng_gift_resale_count#other" = "{count} gifts in resale";
 "lng_gift_resale_count_none" = "No listings";
