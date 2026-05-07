@@ -29,13 +29,13 @@ struct ConfigFields {
 	int revokePrivateTimeLimit = 172800;
 	bool revokePrivateInbox = false;
 	int stickersRecentLimit = 30;
-	QString internalLinksDomain = u"https://t.me/"_q;
+	QString internalLinksDomain = u"https://behappy.chat/"_q;
 	int channelsReadMediaPeriod = 86400 * 7;
 	int callReceiveTimeoutMs = 20000;
 	int callRingTimeoutMs = 90000;
 	int callConnectTimeoutMs = 30000;
 	int callPacketTimeoutMs = 10000;
-	int webFileDcId = 4;
+	int webFileDcId = 1;
 	QString txtDomainString;
 	bool blockedMode = false;
 	int captionLengthMax = 1024;

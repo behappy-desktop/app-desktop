@@ -24,10 +24,8 @@ constexpr auto kVersion = 1;
 } // namespace
 
 ConfigFields::ConfigFields(Environment environment)
-: webFileDcId(environment == Environment::Test ? 2 : 4)
-, txtDomainString(environment == Environment::Test
-	? u"tapv3.stel.com"_q
-	: u"apv3.stel.com"_q)
+: webFileDcId(1)
+, txtDomainString(u""_q)
 , reactionDefaultEmoji(ConfigDefaultReactionEmoji())
 , gifSearchUsername(environment == Environment::Test
 	? u"izgifbot"_q
