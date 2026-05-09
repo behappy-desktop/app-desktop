@@ -1,0 +1,6 @@
+0.1.0 (2026-05-08)
+
+- First BeHappy Desktop release on the new tdesktop fork
+- Connects to BeHappy backend (DC1, DC2)
+- BeHappy branding (icons, app name)
+- Russian translations
