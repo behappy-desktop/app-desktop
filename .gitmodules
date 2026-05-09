@@ -69,7 +69,7 @@
 	url = https://github.com/behappy-desktop/lib_webrtc.git
 [submodule "Telegram/ThirdParty/tgcalls"]
 	path = Telegram/ThirdParty/tgcalls
-	url = https://github.com/behappy-ios/tgcalls.git
+	url = https://github.com/behappy-desktop/tgcalls.git
 [submodule "Telegram/lib_webview"]
 	path = Telegram/lib_webview
 	url = https://github.com/behappy-desktop/lib_webview.git
