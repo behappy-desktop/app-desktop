@@ -1,3 +1,8 @@
+0.1.1 (17.05.26)
+
+- Обновлены адреса серверов BeHappy
+- Внутренние улучшения подключения
+
 0.1.0 (08.05.26)
 
 - First BeHappy Desktop release on the new tdesktop fork

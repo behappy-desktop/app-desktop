@@ -28,30 +28,24 @@ struct BuiltInDc {
 	int port;
 };
 
-// BeHappy multi-DC bootstrap. DC1 = St. Petersburg (srv1), DC2 = Moscow
-// (srv3-dev — test-env DC2 as of 2026-04-16). Keep in sync with the
-// `dcs` PG table + help.getConfig output. Clients pick up the full
-// vector dynamically via dcOptions, but initial connect still uses
-// this table, and FILE_MIGRATE_X / PHONE_MIGRATE_X reconnects need
-// an explicit entry per DC id.
+// BeHappy bootstrap — single DC only (server-1 migration to new IP
+// 2026-05-17). The previous srv3-dev DC2 is decommissioned for the
+// rebrand; clients will still pick up extra DCs dynamically via
+// dcOptions once help.getConfig advertises them.
 const BuiltInDc kBuiltInDcs[] = {
-	{ 1, "144.31.238.115" , 10443 },
-	{ 2, "144.31.221.5"   , 10443 },
+	{ 1, "144.31.223.88" , 10443 },
 };
 
 const BuiltInDc kBuiltInDcsIPv6[] = {
-	{ 1, "144.31.238.115" , 10443 },
-	{ 2, "144.31.221.5"   , 10443 },
+	{ 1, "144.31.223.88" , 10443 },
 };
 
 const BuiltInDc kBuiltInDcsTest[] = {
-	{ 1, "144.31.238.115" , 10443 },
-	{ 2, "144.31.221.5"   , 10443 },
+	{ 1, "144.31.223.88" , 10443 },
 };
 
 const BuiltInDc kBuiltInDcsIPv6Test[] = {
-	{ 1, "144.31.238.115" , 10443 },
-	{ 2, "144.31.221.5"   , 10443 },
+	{ 1, "144.31.223.88" , 10443 },
 };
 
 const char *kTestPublicRSAKeys[] = { "\
